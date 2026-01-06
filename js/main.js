@@ -1,6 +1,6 @@
 // Dark/Light Toggle
 const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
+themeToggle?.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
           : ""
       }
     `;
-
     container.appendChild(card);
   });
 });
