@@ -57,21 +57,36 @@ body.dark footer { background:#222; }
   .services ul { max-width:90%; padding-left:20px; }
 }
 .site-logo {
-  height: 50px;       /* adjust size if too big or small */
+  max-height: 60px;   /* maximum height for desktop */
   width: auto;
   object-fit: contain;
   transition: transform 0.3s;
 }
 
 .site-logo:hover {
-  transform: scale(1.05); /* little hover effect */
+  transform: scale(1.05);
 }
 
-@media(max-width:768px){
+/* Responsive for tablets and mobile */
+@media (max-width:1024px) {
   .site-logo {
-    height: 40px; /* smaller on mobile */
+    max-height: 50px;
   }
-} /* <-- closing brace added */
+}
+
+@media (max-width:768px) {
+  .site-logo {
+    max-height: 40px;
+  }
+}
+
+@media (max-width:480px) {
+  .site-logo {
+    max-height: 35px;
+  }
+}
+
+
 
 
 
