@@ -56,3 +56,20 @@ body.dark footer { background:#222; }
   .result-card { max-width:90%; }
   .services ul { max-width:90%; padding-left:20px; }
 }
+.site-logo {
+  height: 50px;       /* adjust size if too big or small */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.site-logo:hover {
+  transform: scale(1.05); /* little hover effect */
+}
+
+@media(max-width:768px){
+  .site-logo {
+    height: 40px; /* smaller on mobile */
+  }
+
+
