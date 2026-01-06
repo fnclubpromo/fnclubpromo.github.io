@@ -1,12 +1,10 @@
-// Dark / Light toggle
-const toggle = document.getElementById("themeToggle");
-if (toggle) {
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-  });
-}
+// Dark/Light Toggle
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
 
-// Render results
+// Render Portfolio Results
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("resultsContainer");
   if (!container || typeof artists === "undefined") return;
@@ -21,10 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <strong>${item.streams_after} streams</strong>
       ${
         item.spotify_embed
-          ? `<iframe
-              src="https://open.spotify.com/embed/album/${item.spotify_embed}"
-              width="100%" height="80" frameborder="0"
-              allow="encrypted-media"></iframe>`
+          ? `<iframe src="https://open.spotify.com/embed/album/${item.spotify_embed.split('/').pop()}" width="100%" height="80" frameborder="0" allow="encrypted-media"></iframe>`
           : ""
       }
     `;
