@@ -77,7 +77,7 @@ body.dark footer { background:#222; }
 
 @media (max-width:768px) {
   .site-logo {
-    max-height: 55px; /* slightly bigger for mobile */
+    max-height: 100px; /* slightly bigger for mobile */
   }
 
   /* Center navbar content on mobile */
@@ -124,6 +124,7 @@ body.dark footer { background:#222; }
     animation: slideDown 0.8s ease-out; /* apply animation */
   }
 }
+
 
 
 
