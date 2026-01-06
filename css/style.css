@@ -107,6 +107,24 @@ body.dark footer { background:#222; }
     max-height: 50px;       /* adjust smaller screens */
   }
 }
+/* Slide-down animation for logo on mobile */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width:768px) {
+  .navbar .logo {
+    animation: slideDown 0.8s ease-out; /* apply animation */
+  }
+}
+
 
 
 
